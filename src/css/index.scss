@@ -1,0 +1,283 @@
+$fullW: 100%;
+$pink: #ff4d79;
+$baseFont: 24px;
+$zoom: 0.9999;
+.pink-font {
+  color: $pink;
+}
+
+.grey-font {
+  color: #969696;
+}
+
+.base-font {
+  font-size: 24px;
+  zoom: $zoom;
+}
+
+.fll {
+  float: left;
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+
+.red-bg {
+  background: url(../imgs/red-bg.png) no-repeat 0 0;
+  background-size: 100% 100%;
+  border-bottom: 2px dashed #fe014d;
+}
+
+.flex-center {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-flow: wrap;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: nowrap;
+  -webkit-flex-flow: nowrap;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.gifts-container {
+  width: $fullW;
+  padding: 40px 44px 60px 44px;
+  .gifts-list-wrapper {
+    width: $fullW;
+    border-radius: 16px;
+    background: #fff;
+  }
+}
+
+.gifts-list-head {
+  width: $fullW;
+  height: 60px;
+  background: #fe014d;
+  border-radius: 12px 12px 0 0;
+  color: #fff;
+  font-size: 30px;
+  zoom: $zoom;
+  img {
+    width: 28px;
+    margin-right: 10px;
+  }
+}
+
+.gifts-use-rule {
+  width: $fullW;
+  height: 60px;
+  padding-top: 20px;
+  font-weight: 500;
+  color: $pink;
+  img {
+    width: 32px;
+    margin-right: 10px;
+  }
+}
+
+.gifts-gotten-look-jump {
+  font-size: $baseFont;
+  padding: 0 40px;
+  margin-top: 10px;
+  zoom: $zoom;
+  .gifts-right-icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../imgs/right-icon.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    margin-left: 6px;
+  }
+}
+
+.gifts-list-item-area {
+  padding: 0 48px;
+}
+
+.gifts-single-item {
+  width: 100%;
+  margin-top: 30px;
+  box-shadow: 0 12px 30px #eee;
+  .gifts-item-top-detail {
+    position: relative;
+    width: 100%;
+    height: 136px;
+    padding: 20px 0;
+    .gifts-card-money {
+      width: 22%;
+      border-right: 2px dashed rgba(225, 225, 225, .7);
+      color: #fff;
+      font-size: 34px;
+      font-weight: bold;
+      zoom: 0.9999;
+    }
+    .gifts-card-detail {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      -webkit-justify-content: center;
+      justify-content: center;
+      width: 75%;
+      color: #fff;
+      padding-left: 10px;
+    }
+    .gifts-get-btn {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translate(0, -50%);
+      min-width: 84px;
+      height: 40px;
+      border-radius: 20px;
+      background: #fff;
+      text-align: center;
+      line-height: 40px;
+      padding: 0 8px;
+    }
+  }
+}
+
+.gifts-ylq {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 92px;
+}
+
+.gifts-card-msg {
+  font-size: 24px;
+  zoom: 0.9999;
+}
+
+.gifts-card-money, .gifts-card-detail {
+  height: 100%;
+}
+
+.gifts-item-use-rule {
+  width: 100%;
+  height: 52px;
+  font-size: 26px;
+  zoom: 0.9999;
+  .gifts-grey-use-rule-down-arrow {
+    width: 36px;
+    margin: 0 10px 0 0;
+    transition: All 0.3s ease-in-out;
+  }
+  .gifts-grey-rule-icon {
+    width: 32px;
+    margin: 0 10px;
+  }
+}
+
+.gifts-jump-btn-container {
+  width: $fullW;
+  height: 160px;
+  .gifts-jump-btn {
+    width: 320px;
+    height: 68px;
+    background: #fe014d;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 34px;
+    zoom: 0.9999;
+  }
+}
+
+.gifts-card-title {
+  font-weight: bold;
+}
+
+.gifts-use-rules-lists {
+  font-size: 24px;
+  padding: 10px 16px 20px 16px;
+  zoom: 0.9999;
+}
+
+.pop-gifts-use-rule-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .7);
+  z-index: 2;
+  .pop-gifts-use-rule-detail-wrapper {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 614px;
+    .pop-gifts-use-rule-detail-title {
+      font-size: 28px;
+      color: #fff;
+      zoom: 0.9999;
+      width: 100%;
+      height: 80px;
+      background: #fe024a;
+      border-radius: 10px 10px 0 0;
+      img {
+        /* width: 28px; */
+        margin-right: 10px;
+      }
+    }
+    .pop-gifts-use-rule-detail-txt{
+      width: 100%;
+      height: 658px;
+      background: #fff;
+      border-radius: 0 0 10px 10px;
+      padding: 30px 20px;
+      font-size: 28px;
+      zoom: 0.9999;
+    }
+    .pop-gifts-use-rule-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 42px;
+      height: 42px;
+      line-height: 38px;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      color: #fff;
+      font-size: 38px;
+      zoom: 0.9999;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
